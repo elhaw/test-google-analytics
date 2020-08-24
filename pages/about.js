@@ -1,4 +1,20 @@
+import Link from 'next/link'
+
 export default function About() {
-    return <h1>about us</h1>;
+    return (
+        <div>
+            <nav style = {{display:"flex"}}>
+                <Link href = '/' >
+                    Home
+                </Link>
+                <Link href = '/contact' >
+                    contact
+                </Link>
+            </nav>
+          <section>
+            <h1>contact us</h1>;
+          </section>
+        </div>
+      );
   }
   
